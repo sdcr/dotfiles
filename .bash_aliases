@@ -1,0 +1,6 @@
+alias latest_log="cd /home/sribeiro/Research/logs/; ls -rt | tail -1 | xargs less"
+alias ll="ls -alrtF --color"
+alias ..="cd .."
+alias ...="cd ..;cd .."
+alias st="git status"
+alias fin="find . | xargs grep"
