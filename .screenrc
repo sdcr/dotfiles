@@ -85,18 +85,20 @@ sorendition "+b kG"
 hardstatus alwayslastline "%H %-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"  
 
 # 2.3) Autoload screen tabs
-chdir /home/sribeiro/Research/os/mckernel/mmserver
-screen -t mmserver_code 0
-chdir /home/sribeiro/Research/os/mckernel/mmserver
-screen -t mmserver_run 1
-chdir /home/sribeiro/Research/os/mckernel/kernel
-screen -t mckernel_code 2
-chdir /home/sribeiro/Research/os/
-screen -t mckernel_run 3
-chdir /home/sribeiro/Research/applications
-screen -t client 4
-chdir /home/sribeiro/Research/
-screen -t logging 5
+screen -t vim 0
+screen -t bash 1
+#chdir /home/sribeiro/Research/os/mckernel/mmserver
+#screen -t mmserver_code 0
+#chdir /home/sribeiro/Research/os/mckernel/mmserver
+#screen -t mmserver_run 1
+#chdir /home/sribeiro/Research/os/mckernel/kernel
+#screen -t mckernel_code 2
+#chdir /home/sribeiro/Research/os/
+#screen -t mckernel_run 3
+#chdir /home/sribeiro/Research/applications
+#screen -t client 4
+#chdir /home/sribeiro/Research/
+#screen -t logging 5
 
 # 2.4) Description of the keywords used in hardstatus
 # caption always "%?%F%{-b bc}%:%{-b bb}%?%C|%D|%M %d|%H%?%F%{+u wb}%? %L=%-Lw%45>%{+b by}%n%f* %t%{-}%+Lw%-0<"
