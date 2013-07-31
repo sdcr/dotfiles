@@ -32,7 +32,8 @@ if [ "$PS1" ]; then
   fi
   # Turn on checkwinsize
   shopt -s checkwinsize
-  [ "$PS1" = "\\s-\\v\\\$ " ] && PS1="$RED[\u@\h $PURPLE\W $RED]\\$ $CLEAR"
+  #[ "$PS1" = "\\s-\\v\\\$ " ] && 
+  PS1="$RED[\u@\h $PURPLE\W $RED]\\$ $CLEAR"
 #  [ "$PS1" = "\\s-\\v\\\$ " ] && PS1="[\u@\h \W]\\$ "
 fi
 
