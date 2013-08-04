@@ -2,6 +2,7 @@ colorscheme evening
 set number
 set tags=tags;/
 filetype plugin on
+filetype indent on
 
 "Needed to get Alt+? to work
 let c='#'
