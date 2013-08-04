@@ -1,6 +1,7 @@
 colorscheme evening
 set number
 set tags=tags;/
+set hlsearch
 filetype plugin on
 filetype indent on
 
