@@ -43,7 +43,7 @@ vnoremap <C-z> :tabp<CR>
 nnoremap <C-c> :tabnew 
 
 "Easily close a tab
-nnoremap <C-v> :tabclose<CR>
+nnoremap <C-s> :tabclose<CR>
 
 "Allow navigation over windows
 nmap <silent> <A-k> :wincmd k<CR>
