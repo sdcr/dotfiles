@@ -5,6 +5,9 @@ set hlsearch
 filetype plugin on
 filetype indent on
 
+execute pathogen#infect()
+syntax on
+
 "Needed to get Alt+? to work
 let c='#'
 while c <= 'z'
@@ -28,19 +31,19 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 xnoremap p pgvy
 
 "Easy switching between tabs
-nnoremap <C-l> :tabn<CR>
-inoremap <C-l> :tabn<CR>
-vnoremap <C-l> :tabn<CR>
+nnoremap <C-x> :tabn<CR>
+inoremap <C-x> :tabn<CR>
+vnoremap <C-x> :tabn<CR>
 
-nnoremap <C-h> :tabp<CR>
-inoremap <C-h> :tabp<CR>
-vnoremap <C-h> :tabp<CR>
+nnoremap <C-z> :tabp<CR>
+inoremap <C-z> :tabp<CR>
+vnoremap <C-z> :tabp<CR>
 
 "Easily open a new tab
 nnoremap <C-c> :tabnew 
 
 "Easily close a tab
-nnoremap <C-q> :tabclose<CR>
+nnoremap <C-v> :tabclose<CR>
 
 "Allow navigation over windows
 nmap <silent> <A-k> :wincmd k<CR>
@@ -64,3 +67,7 @@ map <A-]> :vsp<CR>:exec("tag ".expand("<cword>"))<CR>
 
 nnoremap <silent> <F8> :TlistToggle<CR>
 
+" Switch to alternate file
+map <C-n> :bnext<CR>
+map <C-m> :bprevious<CR>
+map <C-b> :Bclose<CR>
