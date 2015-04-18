@@ -5,7 +5,16 @@ set hlsearch
 filetype plugin on
 filetype indent on
 
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+set foldmethod=marker
+let g:erlang_folding=1
+
 execute pathogen#infect()
+execute pathogen#helptags()
 syntax on
 
 "Needed to get Alt+? to work
@@ -31,13 +40,13 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 xnoremap p pgvy
 
 "Easy switching between tabs
-nnoremap <C-x> :tabn<CR>
-inoremap <C-x> :tabn<CR>
-vnoremap <C-x> :tabn<CR>
-
-nnoremap <C-z> :tabp<CR>
-inoremap <C-z> :tabp<CR>
-vnoremap <C-z> :tabp<CR>
+"nnoremap <C-x> :tabn<CR>
+"inoremap <C-x> :tabn<CR>
+"vnoremap <C-x> :tabn<CR>
+"
+"nnoremap <C-z> :tabp<CR>
+"inoremap <C-z> :tabp<CR>
+"vnoremap <C-z> :tabp<CR>
 
 "Easily open a new tab
 nnoremap <C-c> :tabnew 
@@ -71,3 +80,6 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 map <C-n> :bnext<CR>
 map <C-m> :bprevious<CR>
 map <C-b> :Bclose<CR>
+
+autocmd VimEnter * NERDTree
+set runtimepath^=~/.vim/bundle/ctrlp.vim
